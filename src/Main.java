@@ -49,9 +49,11 @@ public class Main
         sortManager.sort(sortArray);
 
         //Debug print
+        System.out.println("Least to greatest:");
         for (int i = 0; i < sortArray.size();i++) {
             System.out.println(sortArray.get(i).getSortValue());
         }
+        System.out.print("\n");
 
         //Change the sorting strategy at runtime
         SortStrategy bubbleSorterGL = new GreatestToLeastBubbleSorter();
@@ -60,6 +62,10 @@ public class Main
         //Sort from greatest to least
         sortManager.sort(sortArray);
 
-
+        //Debug print
+        System.out.println("Greatest to least:");
+        for (int i = 0; i < sortArray.size();i++) {
+            System.out.println(sortArray.get(i).getSortValue());
+        }
     }
 }
