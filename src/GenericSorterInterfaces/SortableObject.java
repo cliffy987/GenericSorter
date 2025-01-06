@@ -1,4 +1,4 @@
-package Interfaces;
+package GenericSorterInterfaces;
 
 public interface SortableObject
 {

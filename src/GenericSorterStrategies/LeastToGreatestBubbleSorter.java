@@ -1,7 +1,7 @@
-package Sorters;
+package GenericSorterStrategies;
 
-import Interfaces.SortableObject;
-import Interfaces.SortStrategy;
+import GenericSorterInterfaces.SortableObject;
+import GenericSorterInterfaces.SortStrategy;
 
 import java.util.ArrayList;
 public class LeastToGreatestBubbleSorter implements SortStrategy

@@ -1,14 +1,14 @@
-import Interfaces.SortableObject;
-import Interfaces.SortStrategy;
+import GenericSorterInterfaces.SortableObject;
+import GenericSorterInterfaces.SortStrategy;
 
 import java.util.ArrayList;
 
-public class SortManager
+public class GenericSortManager
 {
     //Change the current sorting strategy object to change the way in which we sort lists at runtime.
     private SortStrategy sortStrategy;
 
-    SortManager(SortStrategy _sorter) {
+    GenericSortManager(SortStrategy _sorter) {
         sortStrategy = _sorter;
     }
 

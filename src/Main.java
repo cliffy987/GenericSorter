@@ -1,8 +1,8 @@
-import Interfaces.SortableObject;
-import Interfaces.SortStrategy;
-import ProgramObjects.ExampleDataObject;
-import Sorters.GreatestToLeastBubbleSorter;
-import Sorters.LeastToGreatestBubbleSorter;
+import GenericSorterInterfaces.SortableObject;
+import GenericSorterInterfaces.SortStrategy;
+import GenericSorterProgramObjects.ExampleDataObject;
+import GenericSorterStrategies.GreatestToLeastBubbleSorter;
+import GenericSorterStrategies.LeastToGreatestBubbleSorter;
 
 import java.util.ArrayList;
 
@@ -43,10 +43,10 @@ public class Main
 
         //Set up SorterManager
         SortStrategy bubbleSorterLG = new LeastToGreatestBubbleSorter();
-        SortManager sortManager = new SortManager(bubbleSorterLG);
+        GenericSortManager genericSortManager = new GenericSortManager(bubbleSorterLG);
 
         //Sort from least to greates
-        sortManager.sort(sortArray);
+        genericSortManager.sort(sortArray);
 
         //Debug print
         System.out.println("Least to greatest:");
@@ -57,10 +57,10 @@ public class Main
 
         //Change the sorting strategy at runtime
         SortStrategy bubbleSorterGL = new GreatestToLeastBubbleSorter();
-        sortManager.setSortStrategy(bubbleSorterGL);
+        genericSortManager.setSortStrategy(bubbleSorterGL);
 
         //Sort from greatest to least
-        sortManager.sort(sortArray);
+        genericSortManager.sort(sortArray);
 
         //Debug print
         System.out.println("Greatest to least:");

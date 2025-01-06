@@ -1,4 +1,4 @@
-package Interfaces;
+package GenericSorterInterfaces;
 import java.util.ArrayList;
 public interface SortStrategy
 {
