@@ -1,6 +1,4 @@
-package GenericSorterProgramObjects;
-
-import GenericSorterInterfaces.SortableObject;
+package GenericSorting;
 
 public class ExampleDataObject implements SortableObject
 {

@@ -1,19 +1,15 @@
-import GenericSorterInterfaces.SortableObject;
-import GenericSorterInterfaces.SortStrategy;
-import GenericSorterProgramObjects.ExampleDataObject;
-import GenericSorterStrategies.GreatestToLeastBubbleSorter;
-import GenericSorterStrategies.LeastToGreatestBubbleSorter;
+package GenericSorting;
 
 import java.util.ArrayList;
 
-public class Main
+public class ExampleMain
 {
     /*
-    This example program demonstrates how using the SortableObject interface along with
+    This example program demonstrates how using the GenericSorting.SortableObject interface along with
     the SortManager object allows a list of objects to be sorted based on a
     property specified by the object without having to create individual sort
     methods for every object. Theoretically, you could sort a list of objects that
-    don't all share the same class, so long as each class implements SortableObject.
+    don't all share the same class, so long as each class implements GenericSorting.SortableObject.
 
     Using the "Strategy" Programming Pattern allows for different types of sorting
     to be performed on a list of objects by the same object/method at runtime. New
@@ -45,7 +41,7 @@ public class Main
         SortStrategy bubbleSorterLG = new LeastToGreatestBubbleSorter();
         GenericSortManager genericSortManager = new GenericSortManager(bubbleSorterLG);
 
-        //Sort from least to greates
+        //Sort from least to greatest
         genericSortManager.sort(sortArray);
 
         //Debug print

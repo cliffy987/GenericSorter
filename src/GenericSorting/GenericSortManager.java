@@ -1,5 +1,4 @@
-import GenericSorterInterfaces.SortableObject;
-import GenericSorterInterfaces.SortStrategy;
+package GenericSorting;
 
 import java.util.ArrayList;
 

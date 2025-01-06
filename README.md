@@ -22,14 +22,16 @@ Project Navigation and How to Use:
 
 - InteliJ IDE is recommended for opening this project.
 
-- All the core project files/folders listed below can be found in the GenericSorter\src directory:
+- All the core project files listed below can be found in the GenericSorter\src\GenericSorting directory:
+
+    - ExampleDataObject demonstrates how the SortableObject interface should be implemented; any number value can be returned by the getSortValue method.
 	
-    - Main: an example program to demonstrate using GenericSortManager to sort a list of SortableObjects, changing the SortingStrategy of GenericSortManager at runtime, and then sorting the list again with the new SortingStrategy.
-
-    - GenericSorterProgramObjects: contains the ExampleDataObject that demonstrates how the SortableObject interface should be implemented; any number value can be returned by the getSortValue method.
-
-    - GenericSorterStrategies: contains two example SortStrategies; GreatestToLeastBubbleSorter and LeastToGreatestBubbleSorter that demonstrate how the SortStrategy interface should be implemented; new sorting strategies can be created by creating a new class that implements SortStrategy and changing the content of the sort method (EX: you could implement quick sort or heap sort this way).
-
+    - ExampleMain: an example program to demonstrate using GenericSortManager to sort a list of SortableObjects, changing the SortStrategy of GenericSortManager at runtime, and then sorting the list again with the new SortStrategy.
+  
     - GenericSortManager: an intermediate class that stores the current SortingStrategy and the sort method where the list of SortableObjects should be passed; modifying this class is not recommended.
 
-    - GenericSorterInterfaces: contains the SortableObject and SortStrategy interfaces; modifying these interfaces is not recommended.
+    - GreatestToLeastBubbleSorter and LeastToGreatestBubbleSorter: example SortStrategies that demonstrate how the SortStrategy interface should be implemented; new sorting strategies can be created by creating a new class that implements SortStrategy and changing the content of the "sort" method (EX: you could implement quick sort or heap sort this way).
+
+    - SortableObject: interface used to denote by what property an object should be sorted by; modifying this interface is not recommended.
+  
+    - SortStrategy: used to denote classes that contain a method of sorting SortableObjects; modifying this interface is not recommended.
