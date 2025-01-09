@@ -1,5 +1,3 @@
-package GenericSorting;
-
 import java.util.ArrayList;
 public interface SortStrategy
 {

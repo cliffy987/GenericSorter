@@ -1,5 +1,3 @@
-package GenericSorting;
-
 public class ExampleDataObject implements SortableObject
 {
     /*

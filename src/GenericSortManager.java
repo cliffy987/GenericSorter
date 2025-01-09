@@ -1,5 +1,3 @@
-package GenericSorting;
-
 import java.util.ArrayList;
 
 public class GenericSortManager
@@ -7,7 +5,7 @@ public class GenericSortManager
     //Change the current sorting strategy object to change the way in which we sort lists at runtime.
     private SortStrategy sortStrategy;
 
-    GenericSortManager(SortStrategy _sorter) {
+    public GenericSortManager(SortStrategy _sorter) {
         sortStrategy = _sorter;
     }
 

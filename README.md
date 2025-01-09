@@ -20,9 +20,9 @@ How it works:
 
 Project Navigation and How to Use:
 
-- InteliJ IDE is recommended for opening this project.
+- InteliJ IDE is recommended for using this project.
 
-- All the core project files listed below can be found in the GenericSorter\src\GenericSorting directory:
+- All the core project files listed below can be found in the GenericSorter\src\ directory:
 
     - ExampleDataObject demonstrates how the SortableObject interface should be implemented; any number value can be returned by the getSortValue method.
 	

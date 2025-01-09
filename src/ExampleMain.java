@@ -1,15 +1,13 @@
-package GenericSorting;
-
 import java.util.ArrayList;
 
 public class ExampleMain
 {
     /*
-    This example program demonstrates how using the GenericSorting.SortableObject interface along with
+    This example program demonstrates how using the SortableObject interface along with
     the SortManager object allows a list of objects to be sorted based on a
     property specified by the object without having to create individual sort
     methods for every object. Theoretically, you could sort a list of objects that
-    don't all share the same class, so long as each class implements GenericSorting.SortableObject.
+    don't all share the same class, so long as each class implements SortableObject.
 
     Using the "Strategy" Programming Pattern allows for different types of sorting
     to be performed on a list of objects by the same object/method at runtime. New
